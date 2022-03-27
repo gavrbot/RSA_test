@@ -11,7 +11,7 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 
 public class RSABase64Test {
-    public static void main(String[] args) throws NoSuchAlgorithmException, IOException, InvalidKeySpecException {
+    public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeySpecException {
         KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
         generator.initialize(2048);
         KeyPair pair = generator.generateKeyPair();
